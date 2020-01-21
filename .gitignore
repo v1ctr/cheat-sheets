@@ -1,2 +1,5 @@
 ### dotenv ###
 .env
+
+### PyCharm ###
+.idea
