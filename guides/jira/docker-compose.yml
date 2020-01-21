@@ -3,12 +3,16 @@ version: '3'
 services:
   postgres:
     image: "postgres:10.0-alpine"
+    networks:
+      - jira_net
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     env_file: .env
     restart: always
   jira:
     image: atlassian/jira-software:latest
+    networks:
+      - jira_net
     ports:
       - "8080:8080"
     volumes:
@@ -21,3 +25,7 @@ services:
 volumes:
   postgres_data:
   jira_data:
+
+networks:
+  jira_net:
+    driver: bridge
