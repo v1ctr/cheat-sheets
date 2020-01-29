@@ -23,3 +23,7 @@
     docker-compose up -d
     ```
 Jira can now be viewed at http://localhost:8080.
+
+
+## REST Api
+    curl -u <username>:<password> -X GET -H "Content-Type: application/json" https://<jira-host>/rest/api/2/issue/createmeta

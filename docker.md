@@ -61,6 +61,9 @@ Open a shell session without interrupting the container:
 ### Combine Stopping and Removing
     docker-compose rm --stop --force
 
+### Restart single container
+    docker-compose restart <container-name>
+
 ### Monitoring the log stream
     docker-compose logs -f
 * The `-f` or `--follow` argument follows the log output.
@@ -75,3 +78,8 @@ Entering the postgres container
 
     docker exec -it postgres psql -U postgres
     
+### pgAdmin
+    docker run -p 8040:80 -e 'PGADMIN_DEFAULT_EMAIL=<email>' -e 'PGADMIN_DEFAULT_PASSWORD=<password>' -d dpage/pgadmin4
+
+### adminer
+    docker run --name adminer -d -p 8080:8080 adminer
