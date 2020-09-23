@@ -4,6 +4,8 @@
 * ### [Heroku](heroku.md)
 
 * ### [PostgreSQL](postgresql.md)
+* ### [Minio](minio.md)
+* ### [ElasticSearch](elastic.md)
 
 * ### [Git](git.md)
 
