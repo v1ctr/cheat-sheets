@@ -8,6 +8,7 @@
 * ### [ElasticSearch](elastic.md)
 
 * ### [Git](git.md)
+* ### [Restic](restic.md)
 
 * ### [Unix](unix.md)
 * ### [Nginx](nginx.md)
